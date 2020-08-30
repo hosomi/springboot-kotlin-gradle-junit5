@@ -17,7 +17,7 @@ Language:
  
 Spring Boot:  
 
- * 2.x
+ * 2.3.x
 
 Project Metadata
 
