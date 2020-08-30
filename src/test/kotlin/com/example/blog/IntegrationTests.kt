@@ -22,7 +22,7 @@ class IntegrationTests(@Autowired val restTemplate: TestRestTemplate) {
 	fun `ブログページのタイトル、コンテンツのテスト`() {
 		val entity = restTemplate.getForEntity<String>("/")
 		assertThat(entity.statusCode).isEqualTo(HttpStatus.OK)
-		assertThat(entity.body).contains("<h1>Blog</h1>", "title")
+		assertThat(entity.body).contains("<h1>title</h1>", "title")
 	}
 
 	@Test
